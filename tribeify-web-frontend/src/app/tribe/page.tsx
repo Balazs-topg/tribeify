@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+
+import { useEffect, useState } from "react";
 
 import { backendApi } from "@/utils/edenTreaty";
 
@@ -8,13 +12,19 @@ import PostInFeed from "../../components/PostInFeed";
 import Sidebar from "../../components/Sidebar";
 import WritePostBtn from "./WritePostBtn";
 
-export default async function Home() {
-  const { data, error } = await backendApi["server-health"].post();
-  console.log(data);
+export default function Home() {
+  const [object, setData] = useState<any>();
+
+  useEffect(() => {
+    (async () => {
+      const response = await backendApi["server-health"].post();
+      setData(response);
+    })();
+  }, []);
 
   return (
     <div className="mx-auto flex max-w-6xl p-8">
-      {JSON.stringify(data)}
+      {JSON.stringify(object)}
       <div className="max-w-3xl">
         <WritePostBtn />
         <PostCategories />
