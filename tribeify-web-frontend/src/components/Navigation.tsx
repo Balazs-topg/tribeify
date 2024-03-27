@@ -8,6 +8,7 @@ import {
   MagnifyingGlassIcon,
   BellAlertIcon,
   BellIcon,
+  ChevronUpDownIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Navigation() {
@@ -16,7 +17,7 @@ export default function Navigation() {
       <nav className="sticky top-0 z-50 bg-white p-3">
         <div className="mx-auto flex w-full max-w-7xl items-center">
           <div className="flex flex-1 items-center gap-8">
-            <strong className="text-lg font-bold">Tribeify</strong>
+            <strong className="text-xl font-bold">Tribeify</strong>
             <div className="flex items-center justify-center rounded-full bg-stone-100 px-1 py-1">
               <div className="flex size-8 items-center justify-center overflow-hidden rounded-full">
                 <Image
@@ -29,7 +30,7 @@ export default function Navigation() {
               </div>
               <div className="ml-2 font-medium">Adonis Gang</div>
               <div className="mx-2">
-                <ChevronDownIcon className="size-5 stroke-2"></ChevronDownIcon>
+                <ChevronUpDownIcon className="size-5 stroke-2"></ChevronUpDownIcon>
               </div>
             </div>
           </div>
@@ -55,8 +56,8 @@ export default function Navigation() {
           </div>
         </div>
       </nav>
-      <nav className="bg-white pt-1">
-        <div className="mx-auto flex w-full max-w-3xl items-center gap-8 font-medium">
+      <nav className="bg-white pt-2">
+        <div className="mx-auto flex w-full max-w-3xl items-center justify-center gap-8 font-medium">
           <div className="relative">
             <div className="p-2">Community</div>
             <div className="absolute bottom-0 h-1 w-full rounded-t-full bg-black"></div>

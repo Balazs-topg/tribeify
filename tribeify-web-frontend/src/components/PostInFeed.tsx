@@ -29,7 +29,7 @@ export default function PostInFeed() {
           <EllipsisHorizontalIcon className="size-5 stroke-2" />
         </div>
       </div>
-      <strong className="mt-2 font-semibold">
+      <strong className="mt-2 text-lg font-semibold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda
         perspiciatis ex porro consectetur consequuntur ratione unde, facere
         magnam eaque
@@ -41,11 +41,11 @@ export default function PostInFeed() {
         voluptas, laboriosam nobis blanditiis.
       </p>
       <div className="mt-2 flex gap-3">
-        <div className="flex w-fit items-center gap-2 rounded-full bg-red-100 px-2 py-1 text-xs font-medium">
+        <div className="flex w-fit items-center gap-2 rounded-full bg-emerald-100 px-2 py-1 text-xs font-medium">
           Discussion
         </div>
       </div>
-      <div className="mt-5 flex gap-3">
+      <div className="mt-5 flex items-center gap-3">
         <div className="flex w-fit items-center gap-2 rounded-lg bg-stone-100 px-2 py-1">
           <ChevronDownIcon className="size-5 stroke-2" />
           <div className="text-sm font-medium">123</div>
@@ -55,6 +55,7 @@ export default function PostInFeed() {
           <ChatBubbleOvalLeftIcon className="size-5 stroke-2" />
           <div className="text-sm font-medium">123</div>
         </div>
+        <div className="text-sm opacity-50">Last comment 5 minutes ago</div>
       </div>
     </div>
   );
