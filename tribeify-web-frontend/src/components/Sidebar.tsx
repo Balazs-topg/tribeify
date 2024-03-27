@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
 
+import { Button } from "./ui/button";
+
 export default function Sidebar() {
   return (
     <div className="ml-6 h-fit max-w-64 shrink-0 overflow-hidden rounded-2xl bg-white">
@@ -29,10 +31,10 @@ export default function Sidebar() {
             <div className="text-sm">Online</div>
           </div>
         </div>
-        <div className=" mt-4 flex items-center justify-center rounded-2xl bg-black px-4 py-2 text-center text-white">
-          <div className="font-semibold">Settings</div>
+        <Button className="mt-4 flex w-full items-center justify-center bg-black px-4 py-2 text-center text-white">
+          Settings
           <AdjustmentsHorizontalIcon className="ml-1 size-5 stroke-2" />
-        </div>
+        </Button>
       </div>
     </div>
   );
