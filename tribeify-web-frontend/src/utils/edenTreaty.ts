@@ -1,3 +1,4 @@
+//@ts-ignore
 import type { App } from "../../../tribeify-backend/app/src/index";
 import { treaty } from "@elysiajs/eden";
 
