@@ -23,14 +23,14 @@ export default function page() {
           </div>
           <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="email">Password</Label>
-            <Input type="email" id="email" placeholder="Email" />
+            <Input type="email" id="email" placeholder="Password" />
           </div>
           <div className=" pt-4">
             <Button className="w-full">Log in</Button>
           </div>
-          <div className=" text-center ">
-            Don't have an account? <Link href={"/sign-up"}>Sign up</Link>
-          </div>
+        </div>
+        <div className="mt-4 text-center">
+          Don&apos;t have an account? <Link href={"/sign-up"}>Sign up</Link>
         </div>
       </div>
     </>
