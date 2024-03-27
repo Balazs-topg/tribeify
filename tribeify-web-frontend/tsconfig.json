@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    // "noImplicitAny": false,
-    // "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "verbatimModuleSyntax": true,
 
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
