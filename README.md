@@ -1,2 +1,2 @@
 # Tribeify
-A community building app for influencer
+A community building app for influencers
